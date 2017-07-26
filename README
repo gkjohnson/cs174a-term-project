@@ -1,3 +1,4 @@
+Team Members: Garrett Johnson, Tarun Solanki, Michael Sechooler, Howard Lee
 Controls:
 
 'esc': quit
@@ -25,14 +26,19 @@ Right Click: Enable shield
 '"' : Enter first person view
 
 Advanced topics:
-    Collision Detection
-    Normal Mapping
+	Collision Detection
+	Normal Mapping
 
-Other:
-    Implemented Multiple Lights
-    Rendering to FrameBuffer
-    Included OBJ loader
-    Included sound
-    
+Other Topics:
+	Implemented Multiple Lights with fall-off
+	Rendering to FrameBuffer
+	Included OBJ loader
+	Included sound
+	Transparency
+	Phong/Garaud/Normal shading
+	Quaternions
+	
 Top bar is health
 Bottom bar is shield recharge
+
+Please also see the HTML readme files for detailed information on classes.
