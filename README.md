@@ -70,6 +70,6 @@ Play back sounds using SDL
 DevIL to load images
 
 #### Graphics
-Use GLUT, OpenGL to set up and interact with GPU
+Used GLUT, OpenGL to set up and interact with GPU
 
 Used helper code from Angel to get handle some math from [here](http://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SIXTH_EDITION/)
