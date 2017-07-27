@@ -64,12 +64,12 @@ Transparent objects with back-to-front rendering
 Use library (presumably from [this repo](https://github.com/stcui/Obj-Loader)) to load obj models
 
 #### Sound
-Play back sounds using SDL
+Play back sounds using [SDL](https://www.libsdl.org/)
 
 #### Image Loading
-DevIL to load images
+Load images using [DevIL](http://openil.sourceforge.net/)
 
 #### Graphics
-Used GLUT, OpenGL to set up and interact with GPU
+Used [GLUT](https://www.opengl.org/resources/libraries/glut/), OpenGL to set up and interact with GPU
 
 Used helper code from Angel to get handle some math from [here](http://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SIXTH_EDITION/)
