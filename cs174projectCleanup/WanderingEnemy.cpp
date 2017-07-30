@@ -35,7 +35,9 @@ WanderingEnemy::WanderingEnemy(vec3 pos) : MobileEntity(ID_WANDERING_EMEMY), _wa
   */
 template <typename T>
 static inline T clamp(T val, T min, T max) {
-	return std::max(std::min(val, max), min);
+    if (val < min) val = min;
+    if (val > max) val = max;
+    return val;
 }
 
 /** Returns the next angle that an object should face at
