@@ -1,6 +1,7 @@
 # cs174a-term-project
+**Fall 2011 UCLA 174A Graphics I Term Project**
 
-Final project for UCLA 174A Graphics I put together with team Tarun Solanki, Mike Sechooler, Howard ??, and Garrett Johnson
+Final project for cs174A put together with team Tarun Solanki, Mike Sechooler, Howard Lee, and Garrett Johnson
 
 ![image](/docs/image1.png)
 
@@ -55,17 +56,20 @@ Support for up to 10 dynamic point lights
 #### Render Texture Rendering
 Rendering to render texture to create "portals"
 
+#### Transparency
+Transparent objects with back-to-front rendering
+
 ### Other
 #### Load OBJs
-Use library (presumably from [this repo](https://github.com/stcui/Obj-Loader)) to load obj models
+Used library from [this repo](https://github.com/stcui/Obj-Loader) to load obj models
 
 #### Sound
-Play back sounds using SDL
+Play back sounds using [SDL](https://www.libsdl.org/)
 
 #### Image Loading
-DevIL to load images
+Load images using [DevIL](http://openil.sourceforge.net/)
 
 #### Graphics
-Use GLUT, OpenGL to set up and interact with GPU
+Used [GLUT](https://www.opengl.org/resources/libraries/glut/), OpenGL to set up and interact with GPU
 
-Used helper code from Angel to get handle some math from [here](http://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SIXTH_EDITION/)
+Used vector and matrix utility code from Angel [here](http://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SIXTH_EDITION/)

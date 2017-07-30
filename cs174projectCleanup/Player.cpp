@@ -4,6 +4,7 @@
 #include "BulletEntity.h"
 #include "Shield.h"
 #include "SoundPlayer.h"
+#include "Teleporter.h"
 #include <iostream>
 void Player::update()
 {
@@ -89,7 +90,6 @@ void Player::update()
 	translate(getVel());
 
 	//if(Globals::MOUSE_EDGE_LEFT) {
-		///@todo Find good values for these constants. Remember to offset the starting location
 		/// so that it doesn't instantly collide with its creator.
 		vec4 dir=normalize((getModel(1).getTransformationMatrix()*vec4(0,0,-1,0)));
 		vec4 dirR=normalize((getModel(1).getTransformationMatrix()*vec4(-1,0,0,0)));
@@ -124,6 +124,7 @@ void Player::update()
 	//SHIELDING
 	if(Globals::MOUSE_EDGE_RIGHT){
 		if(_shieldCharge>=MAX_SHIELD){
+			SoundPlayer::playSound("resources/shield.wav");
 			Globals::addEntity(new Shield(getTranslate(),3,100,this));
 			_shieldCharge=0;
 			_shieldTime=90;
@@ -162,6 +163,9 @@ void Player::onCollide(const GameEntity& g){
 	case ID_BULLET_GRENADE:
 	case ID_BULLET_CURVY:
 		onBulletCollision(static_cast<const BulletEntity*>(&g)->getBulletDamage());
+		break;
+	case ID_TELEPORTER:
+		static_cast<const Teleporter*>(&g)->teleport(this);
 		break;
 	}
 }
