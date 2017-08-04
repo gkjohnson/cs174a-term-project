@@ -3,7 +3,7 @@
 
 Final project for cs174A put together with team Tarun Solanki, Mike Sechooler, Howard Lee, and Garrett Johnson
 
-![image](/docs/image1.png)
+![image](/docs/animation-sm.gif)
 
 ## Controls
 
@@ -19,7 +19,7 @@ S 		move back
 
 Q E 		cycle weapon
 SPACE 		jump (with a tank?!)
-F 			toggle mouse capture
+F 		toggle mouse capture
 
 Mouse 		look direction
 
