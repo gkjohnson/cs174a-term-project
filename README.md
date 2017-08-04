@@ -19,6 +19,7 @@ S 		move back
 
 Q E 		cycle weapon
 SPACE 		jump (with a tank?!)
+F 			toggle mouse capture
 
 Mouse 		look direction
 

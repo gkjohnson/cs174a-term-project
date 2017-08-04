@@ -24,6 +24,7 @@ namespace Globals
 	bool KEY_Q=false;
 	bool KEY_E=false;
 	bool KEY_SPACE=false;
+    bool mouseControllable=true;
 
 	//Mouse button states
 	bool MOUSE_LEFT = false, MOUSE_EDGE_LEFT = false;

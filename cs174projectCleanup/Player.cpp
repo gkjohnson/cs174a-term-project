@@ -25,10 +25,14 @@ void Player::update()
 	const float MAX_VEL=1;
 	const float ACCEL_AMOUNT=.15;
 
-	int xDelta=Globals::mouseX-glutGet(GLUT_WINDOW_WIDTH)/2;
-	int yDelta=Globals::mouseY-glutGet(GLUT_WINDOW_HEIGHT)/2;
+	int xDelta=0;
+	int yDelta=0;
 
-	glutWarpPointer(glutGet(GLUT_WINDOW_WIDTH)/2,glutGet(GLUT_WINDOW_HEIGHT)/2);
+	if(Globals::mouseControllable){
+        glutWarpPointer(glutGet(GLUT_WINDOW_WIDTH)/2,glutGet(GLUT_WINDOW_HEIGHT)/2);
+        xDelta=Globals::mouseX-glutGet(GLUT_WINDOW_WIDTH)/2;
+        yDelta=Globals::mouseY-glutGet(GLUT_WINDOW_HEIGHT)/2;
+    }
 
 	rotate(0,-xDelta/10,0);
 	//rotate(-yDelta/10,0,0);

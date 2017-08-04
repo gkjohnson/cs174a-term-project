@@ -27,6 +27,7 @@ namespace Globals
 	extern bool KEY_Q;
 	extern bool KEY_E;
 	extern bool KEY_SPACE;
+    extern bool mouseControllable;
 
 	//Mouse button states
 	extern bool MOUSE_LEFT, ///< True if left mouse button is down now.

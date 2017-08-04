@@ -331,6 +331,13 @@ NEXT_J:
 		case 'e':
 			Globals::KEY_E = val;
 			break;
+        case 'F':
+        case 'f':
+            if (!val) {
+                Globals::mouseControllable=!Globals::mouseControllable;
+                glutSetCursor(Globals::mouseControllable?GLUT_CURSOR_NONE:GLUT_CURSOR_INHERIT);
+            }
+            break;
 		case ' ':
 			Globals::KEY_SPACE = val;
 			break;
